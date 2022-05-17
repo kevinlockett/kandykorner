@@ -5,7 +5,7 @@ export const SelectLocation = ({employee, updateEmployee}) => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/locations")
+            fetch("https://kandy-api-tqltk.ondigitalocean.app/locations")
                 .then(res => res.json())
                 .then((data) => {
                     setLocation(data)

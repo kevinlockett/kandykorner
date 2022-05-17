@@ -7,7 +7,7 @@ export const EmployeeList = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/employees?_expand=location")
+            fetch("https://kandy-api-tqltk.ondigitalocean.app/employees?_expand=location")
                 .then(res => res.json())
                 .then((data) => {
                     changeEmployee(data)
