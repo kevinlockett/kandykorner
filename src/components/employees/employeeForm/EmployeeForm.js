@@ -31,7 +31,7 @@ export const EmployeeForm = () => {
             body: JSON.stringify(newEmployee)
         }
 
-        return fetch('http://localhost:8088/employees', fetchOption)
+        return fetch('https://kandy-api-tqltk.ondigitalocean.app/employees', fetchOption)
             .then(() => {
                 history.push("/employees")
             })

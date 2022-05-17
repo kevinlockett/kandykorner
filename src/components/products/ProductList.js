@@ -5,7 +5,7 @@ export const ProductList = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/products?_expand=productType&_embed=productType.type")
+            fetch("https://kandy-api-tqltk.ondigitalocean.app/products?_expand=productType&_embed=productType.type")
                 .then(res => res.json())
                 .then((data) => {
                     setProducts(data)

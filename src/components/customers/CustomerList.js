@@ -7,7 +7,7 @@ export const CustomerList = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/customers")
+            fetch("https://kandy-api-tqltk.ondigitalocean.app/customers")
                 .then(res => res.json())
                 .then((data) => {
                     changeCustomer(data)
